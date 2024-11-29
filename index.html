@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./src/style.css"/>
+  </head>
+  <body>
+    <div id="app" class="center-grid">
+        <div id="main">
+            <div id="search" class="wh-100">
+                <form id="search-form" style="all: inherit;">
+                <input id="search-box" type="text" name="query" class="h-100"/>
+                <button id="search-button" type="submit" class="h-100"/>
+                </form>
+            </div>
+            <div id="links" class="center-grid wh-100">
+                <div class="grid-left grid-column">
+                    <img draggable="false" src="./assets/links/gmail.svg" id="link-1" class="link"/>
+                    <img draggable="false" src="./assets/links/outlook.svg" id="link-2" class="link"/>
+                    <img draggable="false" src="./assets/links/protonmail.svg" id="link-3" class="link"/>
+                    <img draggable="false" src="./assets/links/amazon.svg" id="link-4" class="link"/>
+                </div>
+                <div class="grid-center grid-column">
+                    <img draggable="false" src="./assets/links/youtube.svg" id="link-5" class="link"/>
+                    <img draggable="false" src="./assets/links/bluesky.svg" id="link-6" class="link"/>
+                    <img draggable="false" src="./assets/links/pinterest.svg" id="link-7" class="link"/>
+                    <img draggable="false" src="./assets/links/github.svg" id="link-8" class="link"/>
+                </div>
+                <div class="grid-right grid-column">
+                    <img draggable="false" src="./assets/links/googledrive.svg" id="link-9" class="link"/>
+                    <img draggable="false" src="./assets/links/onedrive.svg" id="link-10" class="link"/>
+                    <img draggable="false" src="./assets/links/roblox.svg" id="link-11" class="link"/>
+                    <img draggable="false" src="./assets/links/chess.svg" id="link-12" class="link"/>
+                </div>
+            </div>
+            <div id="deco">c</div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/form.ts"></script>
+    <script type="module" src="/src/link.ts"></script>
+  </body>
+</html>

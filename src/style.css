@@ -1,0 +1,138 @@
+#app {
+    position: fixed;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    padding: 0;
+    margin: 0;
+
+    background: rgba(0, 0, 0, 0.85) url("../assets/background.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#main {
+    display: grid;
+    grid-template-areas:
+        "search search"
+        "links  deco";
+    gap: 2em;
+}
+
+#search {
+    grid-area: search;
+    display: flex;
+
+    padding: 0;
+
+    width: 25em;
+    height: 2em;
+    #search-button {
+        align-self: end;
+        margin: 0;
+
+        width: 10%;
+        height: 100%;
+
+        border: transparent;
+        overflow: hidden;
+
+        background: url("../assets/search.svg");
+        background-size: 85%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #search-button:hover {
+        filter: brightness(80%);
+        cursor: pointer;
+    }
+    #search-button:active {
+        filter: brightness(60%);
+    }
+    #search-box {
+        align-self: start;
+        margin: 0;
+
+        flex-grow: 1;
+        height: 2em;
+
+        color: white;
+        outline: 0!important;
+
+        border: transparent;
+        border-bottom: solid white 0.1em;
+        background: transparent;
+    }
+    #search-box:focus {
+        border-bottom: solid white 0.2em;
+    }
+}
+
+#links {
+    grid-area: links;
+}
+
+#deco {
+    grid-area: deco;
+}
+
+#links {
+    grid-template-areas: "left center right";
+    width: 4em;
+}
+
+#links div img {
+    display: block;
+}
+
+.grid-column {
+    width: 3em;
+    margin: 0;
+}
+
+.grid-left {
+    grid-area: left;
+}
+
+.grid-center {
+    grid-area: center;
+}
+
+.grid-right {
+    grid-area: right;
+}
+
+.link {
+    margin-top: 1em;
+    width: 2em;
+    height: 2em;
+    user-select: none;
+    opacity: 50%;
+}
+.link:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    opacity: 80%;
+}
+
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+
+.wh-100 {
+    height: 100%;
+    width: 100%;
+}
+
+.center-grid {
+    display: grid;
+    place-items: center;
+}

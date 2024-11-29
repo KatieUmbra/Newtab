@@ -1,0 +1,23 @@
+{
+  "name": "newtab",
+  "version": "0.0.0",
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "vite": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": [
+        "@assets/*"
+      ]
+    }
+  }
+}
