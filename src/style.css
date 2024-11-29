@@ -1,3 +1,16 @@
+
+
+
+@font-face {
+    font-family: "FantasqueSansMono";
+    src: url("../assets/font/FantasqueSansMono-Regular.ttf"),
+    local("FantasqueSansMono-Bold"), url("../assets/font/FantasqueSansMono-Bold.ttf");
+}
+
+* {
+    font-family: "FantasqueSansMono", monospace;
+}
+
 #app {
     position: fixed;
     overflow: hidden;
@@ -11,7 +24,7 @@
     padding: 0;
     margin: 0;
 
-    background: rgba(0, 0, 0, 0.85) url("../assets/background.jpg");
+    background: rgba(0, 0, 0, 0.7) url("../assets/background.jpg");
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -81,14 +94,25 @@
     grid-area: deco;
 }
 
+#deco-img {
+    width: 13em;
+    mix-blend-mode: screen;
+}
+
+#deco-text {
+    color: white;
+    text-align: justify;
+}
+
 #links {
     grid-template-areas: "left center right";
-    width: 4em;
+    width: 6em;
 }
 
 #links div img {
     display: block;
 }
+
 
 .grid-column {
     width: 3em;
@@ -108,7 +132,7 @@
 }
 
 .link {
-    margin-top: 1em;
+    margin-bottom: 1em;
     width: 2em;
     height: 2em;
     user-select: none;
