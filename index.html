@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World!</title>
+    <title>New Tab ૮ ˶ᵔ ᵕ ᵔ˶ ა</title>
     <link rel="stylesheet" href="./src/style.css"/>
+    <!--Hello Kitty icon by Icons8-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
   </head>
   <body>
+    <!--https://stackabuse.com/loading-animation-in-vanilla-javascript/-->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
     <div id="app" class="center-grid">
         <div id="main">
             <div id="search" class="wh-100">
@@ -36,7 +43,7 @@
                 </div>
             </div>
             <div id="deco" class="grid-center">
-                <img src="./assets/angel.jpg" id="deco-img"/>
+                <img src="./assets/angel.png" id="deco-img"/>
                 <p id="deco-text"></p>
             </div>
         </div>
@@ -44,5 +51,6 @@
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/form.ts"></script>
     <script type="module" src="/src/link.ts"></script>
+    <script type="module" src="/src/load.ts"></script>
   </body>
 </html>
