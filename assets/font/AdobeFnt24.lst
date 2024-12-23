@@ -1,0 +1,99 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FantasqueSansMono-Bold
+FamilyName:Fantasque Sans Mono
+StyleName:Bold
+FullName:Fantasque Sans Mono Bold
+MenuName:Fantasque Sans Mono
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:X:\Projects\Newtab\assets\Font\FantasqueSansMono-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:164020
+FileModTime:1734649104
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Fantasque Sans Mono Bold
+NameArray:0,Win,1,Fantasque Sans Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FantasqueSansMono-BoldItalic
+FamilyName:Fantasque Sans Mono
+StyleName:Bold Italic
+FullName:Fantasque Sans Mono Bold Italic
+MenuName:Fantasque Sans Mono
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:X:\Projects\Newtab\assets\Font\FantasqueSansMono-BoldItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:182104
+FileModTime:1734649104
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Fantasque Sans Mono Bold Italic
+NameArray:0,Win,1,Fantasque Sans Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FantasqueSansMono-Italic
+FamilyName:Fantasque Sans Mono
+StyleName:Italic
+FullName:Fantasque Sans Mono Italic
+MenuName:Fantasque Sans Mono
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:X:\Projects\Newtab\assets\Font\FantasqueSansMono-Italic.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:174380
+FileModTime:1734649104
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Fantasque Sans Mono Italic
+NameArray:0,Win,1,Fantasque Sans Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FantasqueSansMono-Regular
+FamilyName:Fantasque Sans Mono
+StyleName:Regular
+FullName:Fantasque Sans Mono Regular
+MenuName:Fantasque Sans Mono
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:X:\Projects\Newtab\assets\Font\FantasqueSansMono-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:168008
+FileModTime:1734649104
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Fantasque Sans Mono Regular
+NameArray:0,Win,1,Fantasque Sans Mono
+%EndFont
+
