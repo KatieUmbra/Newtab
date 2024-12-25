@@ -15,7 +15,7 @@ form.onsubmit = (event) => {
         formTxtbox.focus();
         return;
     };
-    if (URL.canParse(inputText) || URL.canParse("https://" + inputText)) url = inputText;
+    if (URL.canParse(inputText)) url = inputText;
     else {
         console.log("URL is invalid!");
         const searchEncoded = encodeURI(inputText);
