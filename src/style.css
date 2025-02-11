@@ -79,10 +79,11 @@
 
 #main {
     display: grid;
+    width: 30lvw;
     grid-template-areas:
         "search search"
         "links  deco";
-    row-gap: 2em;
+    row-gap: 1lvw;
 }
 
 #search {
@@ -91,8 +92,8 @@
 
     padding: 0;
 
-    width: 25em;
-    height: 2em;
+    width: 30lvw;
+    height: 4lvh;
     #search-button {
         align-self: end;
         margin: 0;
@@ -120,7 +121,7 @@
         margin: 0;
 
         flex-grow: 1;
-        height: 2em;
+        height: 2lvh;
 
         color: white;
         outline: 0!important;
@@ -148,8 +149,8 @@
 
 #deco-img {
     margin: 0;
-    height: 100%;
-    width: 12rem;
+    height: 15lvh;
+    width: 10lvw;
     mix-blend-mode: screen;
     user-select: none;
 }
@@ -161,8 +162,8 @@
 }
 
 #links {
-    grid-template-areas: "left center right";
-    width: 6em;
+    grid-template-areas: "left center-left center-right right";
+    width: 15lvw;
 }
 
 #links div img {
@@ -171,7 +172,7 @@
 
 
 .grid-column {
-    width: 3em;
+    width: 3lvw;
     margin: 0;
 }
 
@@ -179,8 +180,12 @@
     grid-area: left;
 }
 
-.grid-center {
-    grid-area: center;
+.grid-center-left {
+    grid-area: center-left;
+}
+
+.grid-center-right {
+    grid-area: center-right;
 }
 
 .grid-right {
