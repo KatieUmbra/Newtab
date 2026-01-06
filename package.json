@@ -19,5 +19,14 @@
         "@assets/*"
       ]
     }
+  },
+  "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@mdi/svg": "^7.4.47"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "singleQuote": false,
+    "useTabs": false
   }
 }

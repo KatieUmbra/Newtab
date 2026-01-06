@@ -10,7 +10,11 @@ const links = new Map<number, string>([
     [9, "https://drive.google.com/"],
     [10, "https://onedrive.live.com/"],
     [11, "https://roblox.com/"],
-    [12, "https://chess.com"]
+    [12, "https://catbox.moe/"],
+    [13, "https://reddit.com/"],
+    [14, "https://tumblr.com/"],
+    [15, "https://web.whatsapp.com/"],
+    [16, "https://gelbooru.com/"]
 ]);
 
 links.forEach((value: string, key: number) => {

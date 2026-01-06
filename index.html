@@ -1,56 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Tab ૮ ˶ᵔ ᵕ ᵔ˶ ა</title>
-    <link rel="stylesheet" href="./src/style.css"/>
-    <!--Hello Kitty icon by Icons8-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
-  </head>
-  <body>
-    <!--https://stackabuse.com/loading-animation-in-vanilla-javascript/-->
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Tab ૮ ˶ᵔ ᵕ ᵔ˶ ა</title>
+        <link rel="stylesheet" href="./src/style.css" />
+        <!--Hello Kitty icon by Icons8-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    </head>
+    <body>
+        <!--https://stackabuse.com/loading-animation-in-vanilla-javascript/-->
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
 
-    <div id="app" class="center-grid">
-        <div id="main">
-            <div id="search" class="wh-100">
-                <form id="search-form" style="all: inherit;">
-                <input id="search-box" type="text" name="query" class="h-100"/>
-                <button id="search-button" type="submit" class="h-100"/>
-                </form>
-            </div>
-            <div id="links" class="center-grid wh-100">
-                <div class="grid-left grid-column">
-                    <img draggable="false" src="./assets/links/gmail.svg" id="link-1" class="link"/>
-                    <img draggable="false" src="./assets/links/outlook.svg" id="link-2" class="link"/>
-                    <img draggable="false" src="./assets/links/protonmail.svg" id="link-3" class="link"/>
-                    <img draggable="false" src="./assets/links/amazon.svg" id="link-4" class="link"/>
+        <div id="app" class="center-grid">
+            <div id="main">
+                <div id="search" class="wh-100">
+                    <form id="search-form" style="all: inherit">
+                        <select id="search-type" name="searches">
+                            <option value="default">Default</option>
+                            <option value="reddit">Reddit</option>
+                            <option value="youtube">Youtube</option>
+                            <option value="google">Google</option>
+                            <option value="torrent">Torrent</option>
+                            <option value="booru">Booru</option>
+                            <option value="safebooru">Safebooru</option>
+                        </select>
+                        <input
+                            id="search-box"
+                            type="text"
+                            name="query"
+                            class="h-100"
+                        />
+                        <button
+                            id="search-button"
+                            name="search"
+                            type="submit"
+                            class="h-100"
+                            value="default"
+                        />
+                    </form>
                 </div>
-                <div class="grid-center grid-column">
-                    <img draggable="false" src="./assets/links/youtube.svg" id="link-5" class="link"/>
-                    <img draggable="false" src="./assets/links/bluesky.svg" id="link-6" class="link"/>
-                    <img draggable="false" src="./assets/links/pinterest.svg" id="link-7" class="link"/>
-                    <img draggable="false" src="./assets/links/github.svg" id="link-8" class="link"/>
+                <div id="links" class="wh-100">
+                    <div class="link-column">
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/gmail.svg"
+                            id="link-1"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/microsoft-outlook.svg"
+                            id="link-2"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="./assets/links/protonmail.svg"
+                            id="link-3"
+                            class="link"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/shopping.svg"
+                            id="link-4"
+                            class="link mdi"
+                        />
+                    </div>
+                    <div class="link-column">
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/youtube.svg"
+                            id="link-5"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="./assets/links/bluesky.svg"
+                            id="link-6"
+                            class="link"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/pinterest.svg"
+                            id="link-7"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/github.svg"
+                            id="link-8"
+                            class="link mdi"
+                        />
+                    </div>
+                    <div class="link-column">
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/reddit.svg"
+                            id="link-13"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="assets/links/tumblr.svg"
+                            id="link-14"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/whatsapp.svg"
+                            id="link-15"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/image-frame.svg"
+                            id="link-16"
+                            class="link mdi"
+                        />
+                    </div>
+                    <div class="link-column">
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/google-drive.svg"
+                            id="link-9"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/microsoft-onedrive.svg"
+                            id="link-10"
+                            class="link mdi"
+                        />
+                        <img
+                            draggable="false"
+                            src="./assets/links/roblox.svg"
+                            id="link-11"
+                            class="link"
+                        />
+                        <img
+                            draggable="false"
+                            src="node_modules/@mdi/svg/svg/cat.svg"
+                            id="link-12"
+                            class="link mdi"
+                        />
+                    </div>
                 </div>
-                <div class="grid-right grid-column">
-                    <img draggable="false" src="./assets/links/googledrive.svg" id="link-9" class="link"/>
-                    <img draggable="false" src="./assets/links/onedrive.svg" id="link-10" class="link"/>
-                    <img draggable="false" src="./assets/links/roblox.svg" id="link-11" class="link"/>
-                    <img draggable="false" src="./assets/links/chess.svg" id="link-12" class="link"/>
+                <div id="deco" class="grid-center">
+                    <img
+                        draggable="false"
+                        src="./assets/angel.png"
+                        id="deco-img"
+                    />
+                    <p id="deco-text"></p>
                 </div>
-            </div>
-            <div id="deco" class="grid-center">
-                <img draggable="false" src="./assets/angel.png" id="deco-img"/>
-                <p id="deco-text"></p>
             </div>
         </div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-    <script type="module" src="/src/form.ts"></script>
-    <script type="module" src="/src/link.ts"></script>
-    <script type="module" src="/src/load.ts"></script>
-  </body>
+        <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="/src/form.ts"></script>
+        <script type="module" src="/src/link.ts"></script>
+        <script type="module" src="/src/load.ts"></script>
+    </body>
 </html>
