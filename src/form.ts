@@ -19,7 +19,7 @@ form.onsubmit = (event) => {
     };
     if (URL.canParse(inputText)) url = inputText;
     else {
-        if (inputText.includes('.')) {
+        if (inputText.includes('.') && !inputText.includes(' ')) {
             url = `https://${inputText}`
         } else {
             const searchEncoded = encodeURI(inputText);
