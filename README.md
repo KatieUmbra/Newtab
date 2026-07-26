@@ -1,2 +1,7 @@
-# Newtab
-Vanilla js project with a customized new tab for my web browser
+# MOVING TO CODEBERG
+
+https://codeberg.org/katieumbra/nvim
+
+## Why?
+
+https://ziglang.org/news/migrating-from-github-to-codeberg/
